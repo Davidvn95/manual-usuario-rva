@@ -33,3 +33,15 @@ Por último, esta vista devuelve el resultado de la calculadora de riesgo vascul
 
 <img src="https://github.com/user-attachments/assets/48eaa525-5689-4977-8e3b-5784aeafd062" alt="Ejemplo" width="200" style="margin-x: 0;">
 
+# Indicaciones para la Api
+La documentación para conocer los endpoints y los parametros que recibe, así como un ejemplo de la respuesta, se encuentra en el archivo swaggerui.pdf.
+
+Para correr la api en su local:
+- abra el proyecto con visual estudio.
+- en la terminal, navegue hasta la carpeta Infraestructura del proyecto y ejecute:
+
+    ```
+    dotnet ef database update --context PostgreSqlDbContext
+    ```
+- llene las tablas de Municipios, DepartamentosPais, Roles, y TipoDocumento con los datos en la carpeta seed de Infraestructua.
+- Por último corra el proyecto.
